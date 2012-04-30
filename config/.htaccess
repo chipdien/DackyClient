@@ -1,0 +1,5 @@
+Options +FollowSymlinks
+RewriteEngine on
+
+Rewritecond %{http_host} ^localhost [nc]
+Rewriterule ^(.*)$ http://play.dackyvn.net/config/$1 [r,nc]
